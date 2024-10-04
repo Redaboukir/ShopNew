@@ -7,6 +7,17 @@
   pointer-events: none;
 }
 
+.app-container {
+  display: flex;
+}
+
+.content {
+  padding: 2rem;
+  flex: 1;
+  background-color: #f8f9fa; /* Couleur claire */
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
