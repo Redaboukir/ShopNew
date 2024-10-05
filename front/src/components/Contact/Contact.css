@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+  height: 100%; /* Assurez-vous que le body occupe toute la hauteur */
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  height: 100vh; /* Hauteur totale de la fenêtre */
+}
+
+.sidebar {
+  position: fixed; /* Reste fixe sur le côté gauche */
+  width: 25%;
+  height: 100vh;
+  background: #312450;
+  font-size: 0.65em;
+}
+
+.main-content {
+  margin-left: 25%; /* Espace pour la sidebar */
+  width: 75%; /* Prend le reste de la largeur */
+  display: flex; /* Flex pour centrer le contenu */
+  align-items: center; /* Centre verticalement */
+  justify-content: center; /* Centre horizontalement */
+}
+
+.container {
+  max-width: 600px;
+  width: 100%; /* Permet d'utiliser toute la largeur disponible */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #00bcd4;
+  text-transform: uppercase;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.social {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s;
+}
+
+.social:hover {
+  transform: scale(1.1);
+}
+
+p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.go-back {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #00bcd4;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.go-back:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .social {
+    width: 36px;
+    height: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
